@@ -57,6 +57,7 @@ XGBoost
 Imbalanced-learn (SMOTE)
 
 ## Project Workflow
+
 1️⃣ Data Loading
 
 The dataset is loaded using pandas.
@@ -64,6 +65,7 @@ The dataset is loaded using pandas.
 import pandas as pd
 
 df = pd.read_csv("cell2celltrain.csv")
+
 2️⃣ Data Exploration
 
 Basic exploration techniques were used:
