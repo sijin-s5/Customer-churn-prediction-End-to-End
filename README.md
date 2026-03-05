@@ -37,10 +37,8 @@ Network usage
 Target column:
 
 Churn
-🛠 Technologies Used
-Programming Language
-
-Python
+## Technologies Used
+Programming Language : Python
 
 Libraries
 
@@ -58,7 +56,7 @@ XGBoost
 
 Imbalanced-learn (SMOTE)
 
-⚙️ Project Workflow
+## Project Workflow
 1️⃣ Data Loading
 
 The dataset is loaded using pandas.
@@ -139,7 +137,7 @@ StandardScaler()
 The dataset was imbalanced, so SMOTE (Synthetic Minority Oversampling Technique) was used to balance the classes.
 
 from imblearn.over_sampling import SMOTE
-🤖 Machine Learning Model
+## Machine Learning Model
 XGBoost Classifier
 
 The main model used for prediction:
@@ -154,9 +152,9 @@ Works well with imbalanced datasets
 
 Provides high performance
 
-🔧 Hyperparameter Tuning
+## Hyperparameter Tuning
 
-To improve model performance, RandomizedSearchCV was used.
+To improve model performance,RandomizedSearchCV was used.
 
 Parameters tuned:
 
@@ -170,7 +168,7 @@ subsample
 
 colsample_bytree
 
-📈 Model Evaluation
+## Model Evaluation
 
 The model was evaluated using:
 
@@ -184,9 +182,9 @@ Confusion Matrix
 
 Example metrics:
 
-Accuracy: ~63%
-Recall: ~46%
-📊 Project Pipeline
+Accuracy: 58%
+Recall: 60%
+## Project Pipeline
 Dataset
    ↓
 Data Cleaning
