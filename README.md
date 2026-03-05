@@ -105,11 +105,13 @@ Target variable converted:
 
 Yes → 1
 No → 0
+
 5️⃣ Encoding Categorical Variables
 
 Categorical features were converted using One-Hot Encoding.
 
 pd.get_dummies()
+
 6️⃣ Feature Importance
 
 A Random Forest model was used to determine the most important features.
@@ -121,17 +123,20 @@ Top 12 important features were selected for the final model.
 A heatmap was used to visualize feature relationships.
 
 sns.heatmap()
+
 8️⃣ Train-Test Split
 
 Dataset was split into:
 
 Training Data → 80%
 Testing Data → 20%
+
 9️⃣ Feature Scaling
 
 StandardScaler was applied to normalize features.
 
 StandardScaler()
+
 🔟 Handling Class Imbalance
 
 The dataset was imbalanced, so SMOTE (Synthetic Minority Oversampling Technique) was used to balance the classes.
@@ -186,23 +191,23 @@ Accuracy: 58%
 Recall: 60%
 ## Project Pipeline
 Dataset
-   ↓
+   ->
 Data Cleaning
-   ↓
+   ->
 Feature Engineering
-   ↓
+   ->
 Encoding
-   ↓
+   ->
 Feature Selection
-   ↓
+   ->
 Train-Test Split
-   ↓
+   ->
 Scaling
-   ↓
+   ->
 SMOTE Oversampling
-   ↓
+   ->
 XGBoost Model
-   ↓
+   ->
 Hyperparameter Tuning
-   ↓
+   ->
 Evaluation
