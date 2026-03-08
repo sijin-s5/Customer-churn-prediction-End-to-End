@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Telecom Customer Churn Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 Telecom Customer Churn Prediction</h1>
+<p class="subtitle">Enter customer details to predict churn</p>
+
+<form action="/predict" method="post">
+
+<input type="number" step="any" name="CurrentEquipmentDays" placeholder="Current Equipment Days" required>
+<input type="number" step="any" name="MonthsInService" placeholder="Months In Service" required>
+<input type="number" step="any" name="MonthlyMinutes" placeholder="Monthly Minutes" required>
+<input type="number" step="any" name="PercChangeMinutes" placeholder="Percent Change Minutes" required>
+<input type="number" step="any" name="TotalRecurringCharge" placeholder="Total Recurring Charge" required>
+<input type="number" step="any" name="OffPeakCallsInOut" placeholder="Off Peak Calls In/Out" required>
+<input type="number" step="any" name="PercChangeRevenues" placeholder="Percent Change Revenues" required>
+<input type="number" step="any" name="MonthlyRevenue" placeholder="Monthly Revenue" required>
+<input type="number" step="any" name="PeakCallsInOut" placeholder="Peak Calls In/Out" required>
+<input type="number" step="any" name="OverageMinutes" placeholder="Overage Minutes" required>
+<input type="number" step="any" name="ReceivedCalls" placeholder="Received Calls" required>
+<input type="number" step="any" name="UnansweredCalls" placeholder="Unanswered Calls" required>
+
+<button type="submit">Predict Churn</button>
+
+</form>
+
+<h2 class="result">{{ prediction_text }}</h2>
+
+</div>
+
+</body>
+</html>

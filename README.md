@@ -213,4 +213,7 @@ XGBoost Model
 Hyperparameter Tuning
    ->
 Evaluation
+<<<<<<< HEAD
 
+=======
+>>>>>>> 84db355 (flask and database integration)
