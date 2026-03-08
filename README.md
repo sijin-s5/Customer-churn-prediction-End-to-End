@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Telecom Customer Churn Prediction
 ## Overview
 
@@ -213,7 +214,5 @@ XGBoost Model
 Hyperparameter Tuning
    ->
 Evaluation
-<<<<<<< HEAD
 
-=======
->>>>>>> 84db355 (flask and database integration)
+# Customer Churn Prediction using XGBoost
