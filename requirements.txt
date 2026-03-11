@@ -7,3 +7,4 @@ imbalanced-learn
 xgboost
 flask
 mysql-connector-python
+python-dotenv
