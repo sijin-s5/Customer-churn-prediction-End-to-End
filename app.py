@@ -1,6 +1,8 @@
 from flask import Flask,request,render_template
 import numpy as np
 import pickle
+import os
+from dotenv import load_dotenv
 import mysql.connector
 
 app=Flask(__name__)
@@ -10,11 +12,18 @@ model=pickle.load(open("model.pkl","rb"))
 scaler=pickle.load(open("scaler.pkl","rb"))
 
 # MySQL connection
-db=mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="Sijin@3366",
-    database="churn_db")
+import mysql.connector
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+db = mysql.connector.connect(
+    host=os.getenv("db_host"),
+    user=os.getenv("db_user"),
+    password=os.getenv("db_password"),
+    database=os.getenv("db_database")
+)
 
 cursor=db.cursor()
 

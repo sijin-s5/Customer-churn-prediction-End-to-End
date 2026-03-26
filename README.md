@@ -16,11 +16,14 @@ The goal of this project is to predict whether a customer will churn or stay usi
 
 Target variable:
 
-Churn
+## Churn
+
 0 → Customer stays
+
 1 → Customer leaves
 ## Dataset
 
+### Dataset download link :  https://www.kaggle.com/datasets/sijin1234/customer-churn
 Dataset used: Telecom Customer Dataset
 
 The dataset contains multiple customer attributes such as:
@@ -65,7 +68,7 @@ The dataset is loaded using pandas.
 
 import pandas as pd
 
-df = pd.read_csv("cell2celltrain.csv")
+df = pd.read_csv("churn_dataset.csv")
 
 2️⃣ Data Exploration
 
@@ -216,3 +219,9 @@ Hyperparameter Tuning
 Evaluation
 
 # Customer Churn Prediction using XGBoost
+
+## Screenshots
+
+# Frontend 
+
+![Output](images/frontend.png)
