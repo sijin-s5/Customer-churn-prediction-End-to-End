@@ -22,9 +22,12 @@ Target variable:
 
 1 → Customer leaves
 ## Dataset
+Dataset used: Telecom Customer Dataset
 
 ### Dataset download link :  https://www.kaggle.com/datasets/sijin1234/customer-churn
-Dataset used: Telecom Customer Dataset
+
+Rows : 51048
+Columns : 58
 
 The dataset contains multiple customer attributes such as:
 
