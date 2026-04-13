@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Telecom Customer Churn Prediction
 ## Overview
 
